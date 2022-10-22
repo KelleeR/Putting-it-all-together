@@ -29,6 +29,9 @@ public class Animals {
 		this.name = name;
 	}
 	
+	public String toString() {
+		return this.type + " " + this.name;
+	}
 	
-
+	
 }
