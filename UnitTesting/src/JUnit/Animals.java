@@ -1,5 +1,7 @@
 package JUnit;
 
+import java.util.*;
+
 public class Animals {
 	private String type;
 	private String name;
@@ -9,10 +11,10 @@ public class Animals {
 		this.setName(_name);
 	}
 	
-	public static String animalsName(){
-		return "Bingo";
+	public Animals() {
+		
 	}
-
+	
 	public String getType() {
 		return type;
 	}
@@ -27,6 +29,20 @@ public class Animals {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	static Animals[] Zoo;
+	
+	public void PopulateZoo(Animals [] zoo){
+		Animals animal1 = new Animals("Cat", "Joe");
+		Animals animal2 = new Animals("Turtle", "Robert");
+		Animals animal3 = new Animals("Bird", "Bird");
+		Animals animal4 = new Animals("Shark", "Melissa");
+		
+		Zoo[0]=(animal1);
+		Zoo[1]=(animal2);
+		Zoo[2]=(animal3);
+		Zoo[3]=(animal4);
 	}
 	
 	public String toString() {
